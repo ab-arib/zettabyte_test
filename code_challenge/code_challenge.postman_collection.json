@@ -1,0 +1,988 @@
+{
+	"info": {
+		"_postman_id": "175e1f71-5621-4b32-948d-c2eeeb756083",
+		"name": "code_challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "create article",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Stoicism\",\r\n    \"summary\": \"An Article about stoicism cited from wikipedia\",\r\n    \"content\": \"Stoicism is a school of Hellenistic philosophy founded by Zeno of Citium in Athens in the early 3rd century BC. It is a philosophy of personal eudaemonic virtue ethics informed by its system of logic and its views on the natural world, asserting that the practice of virtue is both necessary and sufficient to achieve eudaimonia—flourishing by means of living an ethical life. The Stoics identified the path to eudaimonia with a life spent practicing the cardinal virtues and living in accordance with nature. The Stoics are especially known for teaching that virtue is the only good for human beings, and those external things—such as health, wealth, and pleasure—are not good nor bad in themselves (adiaphora) but have value as material for virtue to act upon. Alongside Aristotelian ethics, the Stoic tradition forms one of the major founding approaches to virtue ethics.[1] The Stoics also held that certain destructive emotions resulted from errors of judgment, and they believed people should aim to maintain a will (called prohairesis) that is in accordance with nature. Because of this, the Stoics thought the best indication of an individual's philosophy was not what a person said but how a person behaved.[2] To live a good life, one had to understand the rules of the natural order since they thought everything was rooted in nature. Many Stoics—such as Seneca and Epictetus—emphasized that because virtue is sufficient for happiness, a sage would be emotionally resilient to misfortune. This belief is similar to the meaning of the phrase stoic calm, though the phrase does not include the traditional Stoic view that only a sage can be considered truly free and that all moral corruptions are equally vicious.[3] Stoicism flourished throughout the Roman and Greek world until the 3rd century AD, and among its adherents was Emperor Marcus Aurelius. It experienced a decline after Christianity became the state religion in the 4th century AD. Since then, it has seen revivals, notably in the Renaissance (Neostoicism) and in the contemporary era (modern Stoicism).[4]\",\r\n    \"author\": \"aristotle2000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/article/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"article",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - create article",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Lorem Ipsum\",\r\n    \"summary\": \"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..\",\r\n    \"content\": \"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.. comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\",\r\n    \"author\": \"anon001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/article/create",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2741"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ab5-JUJpkLe4pR2e4fP9XpVmWGszzEQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 08:08:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"message\": \"Create new article success\",\n    \"data\": {\n        \"title\": \"Lorem Ipsum\",\n        \"summary\": \"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..\",\n        \"content\": \"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.. comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\",\n        \"author\": \"anon001\",\n        \"created_date\": \"2022-04-23T08:08:56.398Z\",\n        \"_id\": \"6263b41822dce14b5de2ebc5\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "failed - create article",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Lorem Ipsum\",\r\n    \"summary\": \"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..\",\r\n    \"content\": \"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.. comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\",\r\n    \"author\": \"anon001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/article/create",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"create"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "87"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"57-VTIQN9+PlwVwmfgoE7ohkrwz7lM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 08:09:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"failed\",\n    \"statusCode\": 400,\n    \"message\": \"Article title already exists\",\n    \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "get all article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/article/get_all?sortBy=created_date&direction=desc&limit=20&offset=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"article",
+								"get_all"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "created_date"
+								},
+								{
+									"key": "direction",
+									"value": "desc"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - get all article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/article/get_all?sortBy=created_date&direction=desc&limit=20&offset=0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"get_all"
+									],
+									"query": [
+										{
+											"key": "sortBy",
+											"value": "created_date"
+										},
+										{
+											"key": "direction",
+											"value": "desc"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "641"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"281-zG9nXqPZh26Sdy2lvUtj0Vy9nzg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 08:26:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Get all article success\",\n    \"data\": [\n        {\n            \"_id\": \"6263b5ff7feb22676a91242e\",\n            \"title\": \"Great Depression\",\n            \"summary\": \"This article is about the severe worldwide economic downturn in the 1930s.\",\n            \"author\": \"bonk007\",\n            \"created_date\": \"2022-04-23T08:17:03.057Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6263b41822dce14b5de2ebc5\",\n            \"title\": \"Lorem Ipsum\",\n            \"summary\": \"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..\",\n            \"author\": \"anon001\",\n            \"created_date\": \"2022-04-23T08:08:56.398Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get article by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/article/get_by_id/6263d5e9255b691b67bb97a0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"article",
+								"get_by_id",
+								"6263d5e9255b691b67bb97a0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "failed - get article by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/article/get_by_id/6263b41822dce14b5de2ebc4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"get_by_id",
+										"6263b41822dce14b5de2ebc4"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "110"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6e-ZTTuiXiyg58rhXHS/Xx5+ZuEdzA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 08:36:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 404,\n    \"message\": \"Article by id = 6263b41822dce14b5de2ebc4 not found\",\n    \"data\": {}\n}"
+						},
+						{
+							"name": "success - get article by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/article/get_by_id/6263d5e9255b691b67bb97a0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"get_by_id",
+										"6263d5e9255b691b67bb97a0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3281"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd1-3S+KjwXmqGCMFLiPGkn2A5DZGb0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 10:56:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Get article by id = 6263d5e9255b691b67bb97a0 success\",\n    \"data\": {\n        \"_id\": \"6263d5e9255b691b67bb97a0\",\n        \"title\": \"Lorem Ipsum\",\n        \"summary\": \"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..\",\n        \"content\": \"What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.. comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\",\n        \"author\": \"jondoe01\",\n        \"comments\": [\n            {\n                \"_id\": \"6263db551cc6b2f5d0c2487d\",\n                \"article\": \"6263d5e9255b691b67bb97a0\",\n                \"content\": \"comment 1 untuk article lorem ipsum\",\n                \"from\": \"ali3001\",\n                \"created_date\": \"2022-04-23T10:56:21.176Z\",\n                \"updated_date\": \"2022-04-23T10:56:21.176Z\",\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6263db681cc6b2f5d0c24881\",\n                \"article\": \"6263d5e9255b691b67bb97a0\",\n                \"content\": \"comment 2 untuk article lorem ipsum\",\n                \"from\": \"jen1111\",\n                \"created_date\": \"2022-04-23T10:56:40.249Z\",\n                \"updated_date\": \"2022-04-23T10:56:40.249Z\",\n                \"__v\": 0\n            }\n        ],\n        \"created_date\": \"2022-04-23T10:33:13.494Z\",\n        \"updated_date\": \"2022-04-23T10:33:13.494Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "edit article",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6263c01bd3a4d766f0280d5b\",\r\n    \"title\": \"Folklore of Indonesia\",\r\n    \"summary\": \"Edit -- This article is about definition of Folklore of Indonesia\",\r\n    \"content\": \"Edit -- Folklore of Indonesia is known in Indonesian as dongeng (lit. tale), cerita rakyat (lit. people's story) or folklor (lit. folklore), refer to any folklore found in Indonesia. Its origins are probably an oral culture, with a range of stories of heroes associated with wayang and other forms of theatre, transmitted outside of a written culture. Folklore in Indonesia are closely connected with mythology.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/article/edit",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"article",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - edit article",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6263c01bd3a4d766f0280d5b\",\r\n    \"title\": \"Folklore of Indonesia\",\r\n    \"summary\": \"Edit -- This article is about definition of Folklore of Indonesia\",\r\n    \"content\": \"Edit -- Folklore of Indonesia is known in Indonesian as dongeng (lit. tale), cerita rakyat (lit. people's story) or folklor (lit. folklore), refer to any folklore found in Indonesia. Its origins are probably an oral culture, with a range of stories of heroes associated with wayang and other forms of theatre, transmitted outside of a written culture. Folklore in Indonesia are closely connected with mythology.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/article/edit",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "758"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f6-fkbE8PJYth3TR9yd4XPXCBqMIXk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:06:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Update article success\",\n    \"data\": {\n        \"_id\": \"6263c01bd3a4d766f0280d5b\",\n        \"title\": \"Folklore of Indonesia\",\n        \"summary\": \"Edit -- This article is about definition of Folklore of Indonesia\",\n        \"content\": \"Edit -- Folklore of Indonesia is known in Indonesian as dongeng (lit. tale), cerita rakyat (lit. people's story) or folklor (lit. folklore), refer to any folklore found in Indonesia. Its origins are probably an oral culture, with a range of stories of heroes associated with wayang and other forms of theatre, transmitted outside of a written culture. Folklore in Indonesia are closely connected with mythology.\",\n        \"author\": \"zen001\",\n        \"created_date\": \"2022-04-23T09:00:11.644Z\",\n        \"__v\": 0,\n        \"updated_date\": \"2022-04-23T09:06:43.798Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete article",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/article/delete/6263c01bd3a4d766f0280d5b",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"article",
+								"delete",
+								"6263c01bd3a4d766f0280d5b"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - delete article",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/article/delete/6263c01bd3a4d766f0280d5b",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"article",
+										"delete",
+										"6263c01bd3a4d766f0280d5b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-Ualn/ISztEwGHrK85J+SG0AHXXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:13:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Delete article by id = 6263c01bd3a4d766f0280d5b success\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "create comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"article\": \"6263d5e9255b691b67bb97a0\",\r\n    \"content\": \"comment 3 untuk article lorem ipsum\",\r\n    \"from\": \"slava2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/comment/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"comment",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - create comment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"article\": \"6263b41822dce14b5de2ebc5\",\r\n    \"content\": \"comment 1 untuk article lorem ipsum\",\r\n    \"from\": \"jondoe001\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/comment/create",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"create"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-SBVGAUIUk+qPJnCcqxh+jhjZ6n8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:49:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 201,\n    \"message\": \"Create new comment success\",\n    \"data\": {\n        \"article\": \"6263b41822dce14b5de2ebc5\",\n        \"content\": \"comment 1 untuk article lorem ipsum\",\n        \"from\": \"jondoe001\",\n        \"created_date\": \"2022-04-23T09:49:37.388Z\",\n        \"_id\": \"6263cbb1ad83080f62900c26\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get all comment by article id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/comment/get_all_by_article_id/6263b41822dce14b5de2ebc5?sortBy=created_date&direction=desc&limit=20&offset=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"comment",
+								"get_all_by_article_id",
+								"6263b41822dce14b5de2ebc5"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "created_date"
+								},
+								{
+									"key": "direction",
+									"value": "desc"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - get all comment by article id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/comment/get_all_by_article_id/6263b41822dce14b5de2ebc5?sortBy=created_date&direction=desc&limit=20&offset=0",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"get_all_by_article_id",
+										"6263b41822dce14b5de2ebc5"
+									],
+									"query": [
+										{
+											"key": "sortBy",
+											"value": "created_date"
+										},
+										{
+											"key": "direction",
+											"value": "desc"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "690"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2b2-JEQ/0QSYe6edJWsajZ0AZzzMt2w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:53:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Get all comment by article id = 6263b41822dce14b5de2ebc5 success\",\n    \"data\": [\n        {\n            \"_id\": \"6263cbe4ad83080f62900c2c\",\n            \"article\": \"6263b41822dce14b5de2ebc5\",\n            \"content\": \"comment 3 untuk article lorem ipsum\",\n            \"from\": \"ali3001\",\n            \"created_date\": \"2022-04-23T09:50:28.262Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6263cbd5ad83080f62900c29\",\n            \"article\": \"6263b41822dce14b5de2ebc5\",\n            \"content\": \"comment 2 untuk article lorem ipsum\",\n            \"from\": \"senator1000\",\n            \"created_date\": \"2022-04-23T09:50:13.010Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6263cbb1ad83080f62900c26\",\n            \"article\": \"6263b41822dce14b5de2ebc5\",\n            \"content\": \"comment 1 untuk article lorem ipsum\",\n            \"from\": \"jondoe001\",\n            \"created_date\": \"2022-04-23T09:49:37.388Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "edit comment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6263db681cc6b2f5d0c24881\",\r\n    \"content\": \"EDIT --- comment 2 untuk article lorem ipsum\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/comment/edit",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"comment",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - edit comment",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"6263cbe4ad83080f62900c2c\",\r\n    \"content\": \"EDIT --- comment 3 untuk article lorem ipsum\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/api/comment/edit",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "317"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13d-yNRCmq+aGdDOy2SnmsbvEC5jr6c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:55:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Update comment success\",\n    \"data\": {\n        \"_id\": \"6263cbe4ad83080f62900c2c\",\n        \"article\": \"6263b41822dce14b5de2ebc5\",\n        \"content\": \"EDIT --- comment 3 untuk article lorem ipsum\",\n        \"from\": \"ali3001\",\n        \"created_date\": \"2022-04-23T09:50:28.262Z\",\n        \"__v\": 0,\n        \"updated_date\": \"2022-04-23T09:55:39.240Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/comment/delete/6263dbf21cc6b2f5d0c2488d",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"comment",
+								"delete",
+								"6263dbf21cc6b2f5d0c2488d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success - delete comment",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/comment/delete/6263cbe4ad83080f62900c2c",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"comment",
+										"delete",
+										"6263cbe4ad83080f62900c2c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-2KKchHNDDOUYsUHcAas/FA13K9w\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Apr 2022 09:58:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Delete comment by id = 6263cbe4ad83080f62900c2c success\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
